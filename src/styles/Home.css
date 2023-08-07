@@ -1,0 +1,59 @@
+:root {
+    --white: #FFFFFF;
+    --white2: #FBFAFA;
+    --background: #F2F2FB;
+    --gray: #C6C0C0;
+    --gray2: #EEEEEE;
+    --orange: #e5830e;
+    --orange2: #f9943a;
+    --blue: #07163d;
+    --blue2: #1E46AE;
+    --blueButton: #0B225E;
+
+}
+
+body {
+    background-color: var(--background);
+    font-family: montserrat, monospace;
+    flex-direction: row;
+}
+
+.navebar {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: var(--white2);
+    width: 1278px;
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.icons {
+    margin-left: 80%;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    background-color: var(--white2);
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.iconPhoto {
+    margin-left: 28px;
+}
+
+#profile {
+    width: 45px;
+    height: 45px;
+    background-color: var(--gray);
+    border-radius: 50px;
+}
+
+.scheduler {
+    margin-left: 120px;
+    margin-top: 15px;
+}

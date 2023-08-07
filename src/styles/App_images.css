@@ -1,0 +1,13 @@
+.asdfg {
+    position: relative;
+}
+
+.asdfg .doctors{
+    background-image: url("../images/Vector.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 700px;
+    float: right;
+    width: 800px;
+    margin-top: 33px;
+}

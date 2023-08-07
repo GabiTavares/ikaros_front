@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //max-width: 1444px;
+    //max-height: 1024px;
+  }
+
+:root {
+    --white: #FFFFFF;
+    --background: #F2F2FB;
+    --gray: #C6C0C0;
+    --gray2: #EEEEEE;
+    --orange: #e5830e;
+    --orange2: #f9943a;
+    --blue: #07163d;
+    --blue2: #1E46AE;
+    --blueButton: #0B225E;
+
+}
+
+body {
+    background-color: var(--background);
+    font-family: montserrat, monospace;
+    flex-direction: row;
+}
+
+
+.login {
+    //text-align: center;
+    display: flex;
+    position: absolute;
+    flex-direction: column; /* row é padrão */
+    //flex-shrink: 0;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--white);
+    width: 437px;
+    height: 460px;
+    border-radius: 20px;
+    margin-top: 80px;
+    margin-left: 170px;
+}
+
+.login h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    //display: block;
+    //margin-left: auto;
+}
+
+.datas {
+    font-size: 20px;
+    align-items: center;
+    text-align: left;
+    margin-top: 50px;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 370px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--gray2);
+    font-size: 20px;
+}
+
+.forgot {
+    color: var(--blue2);
+    float: right;
+}
+
+.Logar {
+    margin-top: 30px;
+    background-color: var(--blueButton);
+    font-family: montserrat;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 23px;
+    font-weight: 400;
+    width: 114px;
+    height: 57px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Logar:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+}
+
+.dev {
+    display: inline-flex;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white);
+    flex-shrink: 0;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 40%;
+}
+
+.dev p{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
