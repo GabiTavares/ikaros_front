@@ -4,10 +4,24 @@ import doctor from '../images/doctor.png';
 import ikaros from '../images/ikaros.png';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
+import bcrypt from 'bcryptjs';
 
 export default function Login() {
   const [email, setEmail] = useState();
   const [pwd, setPassword] = useState();
+
+  const password = pwd // senha do usuario
+
+const saltRounds = 10; //valor aleatorio para a criptografia; numero de rounds
+
+bcrypt.hash(password, saltRounds, (err, hash) => {
+  if(err) {
+    console.error('erro ao criar a senha:', err);
+    return;
+  }
+  console.log('Senha criptografada:', hash)
+
+})
 
   function validateDatas() {
     if(email === 'gabi@gmail.com' && pwd === 'gabi123'){

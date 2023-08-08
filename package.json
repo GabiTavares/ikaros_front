@@ -1,14 +1,27 @@
 {
   "name": "ikaros",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "dependencies": {
+    "@skynexui/components": "^1.25.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bcryptjs": "^2.4.3",
+    "devextreme": "23.1",
+    "devextreme-react": "23.1",
+    "install": "^0.13.0",
+    "node-libs-browser": "^2.2.1",
+    "npm": "^9.8.1",
+    "path-browserify": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "sweetalert2": "^11.7.20",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
