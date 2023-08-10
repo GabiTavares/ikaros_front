@@ -4,28 +4,28 @@ import doctor from '../images/doctor.png';
 import ikaros from '../images/ikaros.png';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
-import bcrypt from 'bcryptjs';
+import bcrypt, { hash } from 'bcryptjs';
 
 export default function Login() {
   const [email, setEmail] = useState();
   const [pwd, setPassword] = useState();
 
-  const password = pwd // senha do usuario
-
-const saltRounds = 10; //valor aleatorio para a criptografia; numero de rounds
-
-bcrypt.hash(password, saltRounds, (err, hash) => {
-  if(err) {
-    console.error('erro ao criar a senha:', err);
-    return;
-  }
-  console.log('Senha criptografada:', hash)
-
-})
 
   function validateDatas() {
-    if(email === 'gabi@gmail.com' && pwd === 'gabi123'){
+    const password = pwd // senha do usuario
+
+    const saltRounds = 10; //valor aleatorio para a criptografia; numero de rounds
+
+    if(email === 'gabi@gmail.com' && pwd === 'asdfg123'){    
+    bcrypt.hash(password, saltRounds, (err, hash) => {
+      if(err) {
+        console.error('erro ao criar a senha:', err);
+        return;
+      }else{
       window.location.href = '/Home'
+      console.log('email:' + email + 'senha:' + hash)
+    }})
+      
     }else {
       Swal.fire({
         position: 'top',
@@ -41,7 +41,7 @@ bcrypt.hash(password, saltRounds, (err, hash) => {
     <div className="all">
       <div className='login'>
         <h1>WELCOME!</h1>
-        <div className='datas'>
+        <form className='datas'>
         <p>E-mail</p>
         <input 
         id='input-email' 
@@ -50,7 +50,7 @@ bcrypt.hash(password, saltRounds, (err, hash) => {
         onChange={(e) => setEmail(e.target.value)}/>
         <p>Password <strong className='forgot'>Forgot Password?</strong></p>
         <input onChange={(e) => setPassword(e.target.value)} type='password'/>
-          </div>
+          </form>
         <button className='Logar' onClick={(e) => validateDatas(e)}>Login</button>
       </div>
         <div className='asdfg'>

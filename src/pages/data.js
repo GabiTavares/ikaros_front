@@ -14,8 +14,9 @@ export const data = [
       endDate: new Date('2023-08-15T22:30:00.000Z'),
     }, {
       text: 'Approve Personal Computer Upgrade Plan',
-      startDate: new Date('2023-04-27T17:00:00.000Z'),
-      endDate: new Date('2023-04-27T18:00:00.000Z'),
+      startDate: new Date('2023-08-21T17:00:00.000Z'),
+      endDate: new Date('2023-08-21T18:00:00.000Z'),
+      allDay: true,
     }, {
       text: 'Final Budget Review',
       startDate: new Date('2023-04-27T19:00:00.000Z'),

@@ -5,7 +5,6 @@ import {MdOutlineEmail,
     MdListAlt} from "react-icons/md";
 import profile from '../images/perfil.png'
 import Schedule from './Schedule';
-//import Schedule from './Schedule';
 
 const Home = () => {
     return (

@@ -4,6 +4,7 @@
   "main": "index.js",
   "private": true,
   "dependencies": {
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.5",
     "@skynexui/components": "^1.25.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
